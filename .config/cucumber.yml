@@ -1,0 +1,7 @@
+default: -r features -r features_android_support --tags ~@wip --tags ~@manual --tags ~@ignore --tags ~@stag --tags ~@ios_only
+stg: -r features -r features_android_support --tags ~@wip   --tags ~@manual --tags ~@ignore --tags ~@prd --tags ~@ios_only
+all: -r features -r features_android_support --tags ~@ignore --tags ~@ios_only
+wip: -r features -r features_android_support --tags @wip
+android: -r features -r features_android_support --tags @android
+manual: -r features -r features_android_support --tags @manual
+
